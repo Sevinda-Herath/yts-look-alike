@@ -1,0 +1,358 @@
+*{
+background-color:#272727 ;
+font-family: "Ubuntu", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+
+/*nav bar styles*/
+.nav-bar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav-bar li{ 
+  float: left;
+  border-left:3px solid #313030;
+}
+.nav-bar li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-bar li a:hover:not(.active){
+  background-color: #340192;
+  color: aqua;
+}
+.nav-bar .active {
+  color: #272727;
+  background-color: aqua;
+}
+.nav-bar .se-icon{
+  color: #340192;
+}
+.nav-bar .se-icon i{
+  background: aqua;
+}
+/* Footer styling */
+footer {
+  position: relative;
+  left: 0;
+  bottom:-5;
+  width: 100%;
+  background-color: aqua; 
+  color: white;
+  text-align: center;
+  padding: 15px 0; 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: inherit; 
+}
+
+.footer-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+  background-color: aqua;
+}
+
+.footer-menu li {
+  margin: 0;
+  background-color: aqua;
+}
+
+.footer-menu li a {
+  font-size: 16px;
+  color: #272727;
+  text-decoration: none;
+  background-color: aqua;
+
+}
+
+.footer-menu li a:hover {
+  color: #340192;
+  font-size: 16px;
+}
+
+.footer-bar p {
+  margin: 5px 0 0; 
+  margin-top: 10px;
+  margin-bottom:5px;
+  color: #272727;
+  background-color: aqua;
+  font-size: 12px;
+}
+
+.footer-bar p a {
+  
+  color: #340192;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: aqua;
+}
+
+.footer-bar p a:hover {
+ color: #272727;
+
+}
+
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+
+}
+/* Add padding to prevent footer overlap */
+.content {
+  padding-bottom: 50px; /* Adjust the space as needed */
+}
+
+/* Title Styles */
+h1 {
+  text-align: center;
+  color: aqua;
+  font-size: 2em;
+  margin-top: 20px;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  text-align: center;
+  color: aqua;
+  margin-top: 20px;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* Movie Section Styling */
+.movie-section {
+  display: flex;
+  justify-content: space-around; /* Adds even spacing between movies */
+  margin: 20px auto;
+  max-width: 1200px; /* Restricts the section width */
+  gap: 20px; /* Adds consistent spacing between movie cards */
+  flex-wrap: wrap; /* Ensures the cards wrap to the next line on smaller screens */
+}
+.most-h2 {
+  background-color: #333;
+}
+.most-popular-movies{
+  background-color: #333;
+}
+.back1{
+  background-color: #333;
+  padding-top: 10px;
+  padding-bottom: 60px;
+
+}
+.back2 {
+  padding-top: 10px;
+  padding-bottom: 30px
+}
+.content a{
+  text-decoration: none;
+}
+/* Horizontal display for movie sections */
+.most-popular-movies, .latest-movies {
+  display: flex;
+  justify-content: space-around; /* Adds even spacing between movies */
+  margin: 20px auto;
+  max-width: 1200px; /* Restricts the section width */
+  gap: 20px; /* Adds consistent spacing between movie cards */
+  flex-wrap: wrap;
+
+}
+
+
+/* Movie Card Styling */
+.movie {
+  flex: 1 1 calc(20% - 20px); /* Each movie takes about 20% width minus spacing */
+  background-color: #272727;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px aqua;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  height: 300px;
+  width: 210px;
+}
+
+.movie:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Movie Image Styling */
+.movie img {
+  width: auto; /* Set your desired width */
+  height: 250px; /* Set your desired height */
+  object-fit: cover; /* Ensures the image fills the dimensions without distortion */
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Movie Title Styling */
+.movie p {
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+   text-shadow: 0px 2px 5px rgb(188, 83, 248);
+}
+
+
+
+.bro-movies{
+
+  display: flex;
+  justify-content: space-around; /* Adds even spacing between movies */
+  margin: 20px auto;
+  max-width: 1200px; /* Restricts the section width */
+  gap: 20px; /* Adds consistent spacing between movie cards */
+  flex-wrap: wrap;
+}
+.bro-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.load-btn #load-more {
+  margin: 20px auto;
+  margin-right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.limit-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.limit-btn label {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.limit-btn select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #272727;
+  color: #fff;
+  cursor: pointer;
+}
+
+.limit-btn select option {
+  background-color: #272727;
+  color: #fff;
+}
+
+.load-btn button {
+  background-color: #340192;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-btn button:hover {
+  background-color: #272727;
+  color: aqua;
+}
+
+
+
+
+
+form {
+  background: #272727;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+input[type="text"], select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+}
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+.checkbox-group label {
+  font-weight: normal;
+  color: white;
+}
+.search-btn button {
+  display: block;
+  width: 25%;
+  background-color: #340192;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search-btn button:hover {
+  background-color: #272727;
+  color: aqua;
+}
+.results {
+  margin-top: 30px;
+  color: white;
+}
+.line1, .line2, .line3 {
+  display: flex;
+  gap:20px;
+}
+.search-title, .search-year, .search-sort{
+  margin-right: 10%;
+}
